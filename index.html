@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website</title>
+</head>
+<body>
+    <header style="text-align: center;">
+        <nav class="site-nav grid" style="display: flex; justify-content: space-between;">
+            <h1 style="font-size: 20px; color: #25A59E;">Travel</h1>
+            <img src="images/Frame 1664.svg" alt="pic of menu" class="menu" >
+        </nav>
+        <section id="home" class="home grid">
+            <div class="home-text">
+                <h2 style="font-size: 50px;"><span style="color: #25A59E;">Travel</span> around the world</h2>
+            </div>
+            <div class="home-img" style="width: 100%; height: 100%; background-color: #25A59E;">
+                <img class="banner" src="images/banner_image.png" alt="home-img">    
+            </div>
+        </section>
+        <section class="find">
+            <h3 style="font-size: 45px;">Find your best destination</h3>
+            <p class="we">We have more than 1000+ destinations you can choose.</p>
+    </header>
+        <section id="destination">
+            <div class="destination grid" style="width: 100%; text-align: center;">
+                <div class="mirror">
+                    <img style="width: 60%; transform: rotate(180deg); " class="im" src="images/location_Image_1.png" alt="location">
+                    <h4 style="font-size: 30px;">Mirror Lake</h4>
+                    <p class="dest"><img class="location-img" src="images/Location.svg" alt="">Jawa Tengah, Indonesia</p>
+                </div> 
+                <div>
+                    <img style="width: 60%; transform: rotate(180deg);" class="im" src="images/location_Image_2.png" alt="location">
+                    <h4 style="font-size: 30px;">Hot Air Balloon</h4>
+                    <p class="dest"><img class="location-img" src="images/Location.svg" alt="">Cappadocia, Turkey</p>
+                </div>
+                <a href="" style="font-weight: bold; text-decoration: none;" id="detail-3" class=" more button">More details <img class="arrow" src="images/arrow-right 2.svg" alt=""></a>
+            </div>
+        </section>
+    </section>
+
+    <section class="recommendation grid">
+        <div class="text">
+            <h3 style="font-size: 45px;"><span>Travel</span>, make the trip memorable</h3>
+            <p  style="font-size: 23px;" class="txt">Thousands of our customers always recommend us because of the service we provide. Your trip will be very memorable with the best travel agent, <span> Travel!</span></p>
+        </div>
+    <section class="video">
+        <h3 style="font-size: 45px;">Watch our entire trip documentation</h3>
+        <div> 
+            <video style="width: 100%;" src="images/coverr-overlooking-the-mountains-8002-1080p.mp4" controls loop></video> 
+        </div>
+    </section>
+    <div style="background-color: lightblue;">
+        <h2>Booking Form</h2>
+        <h3>Personal Information</h3>
+        <form>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="phone">Phone Number:</label><br>
+            <input type="number" id="phone" name="phone">
+        </form>
+        <h3>Room Type</h3>
+        <form>
+            <input type="radio" id="classic" name="room-type" value="CLASSIC">
+            <label for="classic">CLASSIC</label><br>
+            <input type="radio" id="deluxe" name="room-type" value="DELUXE">
+            <label for="deluxe">DELUXE</label><br>
+            <input type="radio" id="vip" name="room-type" value="VIP">
+            <label for="vip">VIP</label><br><br>
+            <label for="room">Number of Rooms</label>
+            <input type="number" id="number" name="room-number" value="NUMBER"><br><br>
+            <label for="checkin">Check-in Date: </label>
+            <input type="date" id="checkin" name="Cdate" value="CHECKIN"><br><br>
+            <label for="checkout">Check-out Date: </label>
+            <input type="date" id="checkout" name="Cdate" value="CHECKOUT">
+
+        </form>
+        <h3>Additional Services</h3>
+        <form target="_self">
+            <input type="checkbox" id="AirportTransfer" name="AirportTransfer" value="Airport">
+            <label for="AirportTransfer"> Airport Transfer</label><br>
+            <input type="checkbox" id="Breakfast" name="Breakfast" value="Breakfast">
+            <label for="Breakfast"> Breakfast</label><br>
+            <input type="checkbox" id="Tour" name="Tour" value="Tour">
+            <label for="Tour"> Tour Guide</label><br><br>
+            <input type="submit" value="Submit" onclick="return comfirm('Submitted Successfully!');">
+        </form>
+    </div>
+    <section id="contact-section">
+        <footer>
+            <div id="get">
+                <h3 style="font-size: 45px;">Get our best offer now!</h3>
+                <a href="" style="text-decoration: none; font-weight: bold;" class=" click button">Click here!</a>
+            </div>
+            <hr id="solid">
+            <div class="travel">
+                <h1 style="font-size: 16px; color: #25A59E;">Travel</h1>
+                <p style="font-size: 20px;" class="last leading">The best travel agent in the world. Contact us immediatly now!</p>
+            </div>
+            <div class="social" style="display: flex; justify-content:center;">
+                <div class="inst">
+                    <img src="images/Icon_ig.svg" alt="instagram">
+                </div> 
+                <div class="tw">
+                    <img src="images/Icon_tw.svg" alt="twitter">
+                </div>
+                <div class="yt">
+                    <img src="images/Icon_yt.svg" alt="youtube">
+                </div>
+            </div> 
+            <div style="list-style: none; display: flex; justify-content: space-evenly; text-decoration: none; padding: 20px;" class="footer grid">
+                <ul>
+                    <li><a href="#home"> Home</a></li>
+                    <li><a href="#destination">Destination</a></li>
+                    <li><a href="#guide">Guide</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>  
+        </div>
+        </div>
+        </section>
+    </footer>
+</body>
+</html>
