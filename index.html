@@ -51,10 +51,10 @@
             <video style="width: 100%;" src="images/coverr-overlooking-the-mountains-8002-1080p.mp4" controls loop></video> 
         </div>
     </section>
-    <div style="background-color: lightblue;">
+    <div style="background-color: lightblue; text-align: center;">
         <h2>Booking Form</h2>
         <h3>Personal Information</h3>
-        <form>
+        <form target="_self" method="post">
             <label for="fname">First name:</label><br>
             <input type="text" id="fname" name="fname"><br>
             <label for="lname">Last name:</label><br>
@@ -63,9 +63,7 @@
             <input type="email" id="email" name="email"><br>
             <label for="phone">Phone Number:</label><br>
             <input type="number" id="phone" name="phone">
-        </form>
         <h3>Room Type</h3>
-        <form>
             <input type="radio" id="classic" name="room-type" value="CLASSIC">
             <label for="classic">CLASSIC</label><br>
             <input type="radio" id="deluxe" name="room-type" value="DELUXE">
@@ -78,17 +76,14 @@
             <input type="date" id="checkin" name="Cdate" value="CHECKIN"><br><br>
             <label for="checkout">Check-out Date: </label>
             <input type="date" id="checkout" name="Cdate" value="CHECKOUT">
-
-        </form>
         <h3>Additional Services</h3>
-        <form target="_self">
             <input type="checkbox" id="AirportTransfer" name="AirportTransfer" value="Airport">
             <label for="AirportTransfer"> Airport Transfer</label><br>
             <input type="checkbox" id="Breakfast" name="Breakfast" value="Breakfast">
             <label for="Breakfast"> Breakfast</label><br>
             <input type="checkbox" id="Tour" name="Tour" value="Tour">
             <label for="Tour"> Tour Guide</label><br><br>
-            <input type="submit" value="Submit" onclick="return comfirm('Submitted Successfully!');">
+            <input type="submit" value="Submit" onclick="alert('Submitted Successfully!')"><br>
         </form>
     </div>
     <section id="contact-section">
